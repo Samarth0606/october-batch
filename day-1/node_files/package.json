@@ -1,0 +1,12 @@
+{
+  "name": "node_files",
+  "version": "1.0.0",
+  "description": "hey there i am learning nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "samarth vohra",
+  "license": "ISC"
+}
