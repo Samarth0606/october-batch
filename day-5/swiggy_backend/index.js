@@ -1,6 +1,7 @@
 import express from 'express';
 const app = express();
 import mongoose from 'mongoose';
+import {restRoutes} from './routes/restaurant.route.js'
 
 // DB connect
 mongoose.connect('mongodb+srv://samarthvohraindia:vIPWvMklqMZTmptI@cluster0.9cbny99.mongodb.net/')
@@ -21,6 +22,9 @@ app.use((req,res,next)=>{
 app.get('/' , (req,res)=>{
     res.send("welcome to root route")
 })
+
+
+restRoutes(app);
 
 const PORT = 8000;
 app.listen(PORT , ()=>{
